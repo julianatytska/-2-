@@ -3,6 +3,6 @@ c = input('Choose a or b :')
 a = 'a'
 b = 'b'
 if c == a:
-    print(list(j))
+    print(set(list(j)))
 if c == b:
     print(len(j))
