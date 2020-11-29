@@ -6,3 +6,6 @@ if c == a:
     print(set(list(j)))
 if c == b:
     print(len(j))
+if c != b:
+    if c != a:
+     print("You can choose only a or b")
