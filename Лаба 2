@@ -1,11 +1,18 @@
-j = input('Enter your text :')
-c = input('Choose a or b :')
-a = 'a'
-b = 'b'
-if c == a:
-    print(set(list(j)))
-if c == b:
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+j = input('Enter text :')
+spisok = j.split()
+c = input('Choose a or b:')
+if c == 'a':
+  for i in spisok:
+    if len(i) < 3:
+      spisok.pop(spisok.index(i))
+    spisok.sort()
+    for x in range (0,len(spisok)):
+    
+     print(spisok[x])
+    print("")
+if c == 'b':
     print(len(j))
-if c != b:
-    if c != a:
-     print("You can choose only a or b")
+if c != 'b':
+    if c != 'a':
+        print("You can choose only a or b")
